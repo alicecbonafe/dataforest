@@ -1,0 +1,61 @@
+/* Dataforest Bootstrap Extensions */
+
+/* Drag and drop column functionality */
+.dataforest-table th[draggable="true"] {
+    cursor: move;
+}
+
+/* Sort indicators */
+.dataforest-sort-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
+}
+
+/* Empty state */
+.dataforest-empty {
+    padding: 2rem;
+    color: #6c757d;
+}
+
+/* Column filter inputs */
+.dataforest-filter-input {
+    width: 100%;
+    font-size: 0.875rem;
+}
+
+/* Hover effect for sortable columns */
+.dataforest-table th[wire\:click] {
+    transition: background-color 0.15s ease-in-out;
+}
+
+.dataforest-table th[wire\:click]:hover {
+    background-color: #e9ecef;
+}
+
+/* Improve dropdown behavior for column visibility */
+.dropdown-menu.show {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dataforest-table {
+        font-size: 0.875rem;
+    }
+    
+    .dataforest-table th,
+    .dataforest-table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Ensure proper spacing in filter row */
+.dataforest-table thead tr:nth-child(2) th {
+    padding: 0.5rem;
+}
+
+/* Improve pagination appearance */
+.pagination {
+    margin-bottom: 0;
+}
