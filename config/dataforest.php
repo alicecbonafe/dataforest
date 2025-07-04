@@ -12,7 +12,7 @@ return [
     | 'custom' - Use your own custom CSS
     |
     */
-    'styling' => 'bootstrap',
+    'styling' => 'custom',
 
     /*
     |--------------------------------------------------------------------------

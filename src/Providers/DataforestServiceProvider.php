@@ -20,6 +20,12 @@ class DataforestServiceProvider extends ServiceProvider
             __DIR__.'/../../resources/views' => resource_path('views/vendor/dataforest'),
         ], 'dataforest-views');
 
+        // Publish assets
+        $this->publishes([
+            __DIR__.'/../../resources/css' => public_path('vendor/dataforest/css'),
+            __DIR__.'/../../resources/js' => public_path('vendor/dataforest/js'),
+        ], 'dataforest-assets');
+
         // Load views
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'dataforest');
 
